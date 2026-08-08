@@ -1,0 +1,342 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAHONEY'S GALLERIES | Contemporary Art Institution</title>
+  <meta name="description" content="Mahoney's Galleries represents leading contemporary international artists across New York, London, and Paris. Thoughtfully curated exhibitions of modern painting, sculpture, and spatial installation art.">
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="MAHONEY'S GALLERIES | Contemporary Art &amp; Curated Exhibitions">
+  <meta property="og:description" content="A space for contemporary art, ideas, and connection. Representing international contemporary artists.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+  
+  <!-- App Mounting Container -->
+  <div id="root">
+      <div style="min-height: 100vh; display: flex; flex-direction: column; background-color: #F9F8F6; color: #171716;">
+        
+      <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 40; background-color: rgba(249, 248, 246, 0.96); backdrop-filter: blur(8px); border-bottom: 1px solid #E2E0D9; padding: 1.25rem 0; transition: all 0.3s ease;">
+        <div class="gallery-container" style="display: flex; align-items: center; justify-content: space-between;">
+          
+          <!-- Logo -->
+          <button data-nav="home" style="background: none; border: none; text-align: left; cursor: pointer; padding: 0;">
+            <span class="font-serif" style="font-size: clamp(1.4rem, 2vw, 1.75rem); letter-spacing: 0.18em; text-transform: uppercase; font-weight: 300; display: block; line-height: 1; color: #171716;">
+              MAHONEY'S
+            </span>
+            <span class="font-sans" style="font-size: 0.625rem; letter-spacing: 0.32em; color: #666562; text-transform: uppercase; display: block; margin-top: 5px; font-weight: 500;">
+              GALLERIES
+            </span>
+          </button>
+
+          <!-- Desktop Nav (860px+) -->
+          <nav class="nav-desktop-only" style="align-items: center; gap: 2.5rem;">
+            
+                <button data-nav="home" class="header-nav-link" style="color: #171716; font-weight: 600; border-bottom: 1px solid #171716;">
+                  Home
+                </button>
+              
+                <button data-nav="artists" class="header-nav-link" style="color: #666562; font-weight: 400; border-bottom: 1px solid transparent;">
+                  Artists
+                </button>
+              
+                <button data-nav="press-events" class="header-nav-link" style="color: #666562; font-weight: 400; border-bottom: 1px solid transparent;">
+                  Press / Events
+                </button>
+              
+                <button data-nav="about" class="header-nav-link" style="color: #666562; font-weight: 400; border-bottom: 1px solid transparent;">
+                  About
+                </button>
+              
+                <button data-nav="contact" class="header-nav-link" style="color: #666562; font-weight: 400; border-bottom: 1px solid transparent;">
+                  Contact
+                </button>
+              
+          </nav>
+
+          <!-- Location Indicator Desktop -->
+          <div class="nav-desktop-only" style="align-items: center; gap: 0.6rem; font-size: 0.7rem; letter-spacing: 0.25em; color: #8E8C86; font-family: var(--font-mono); text-transform: uppercase; border-left: 1px solid #E2E0D9; padding-left: 1.5rem;">
+            <span>NY</span><span>·</span><span>LDN</span><span>·</span><span>PARIS</span>
+          </div>
+
+          <!-- Mobile Hamburger Toggle (< 860px) -->
+          <button id="toggle-mobile-menu" class="hamburger-mobile-only" style="background: none; border: none; cursor: pointer; font-family: var(--font-sans); font-size: 0.8125rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; color: #171716; padding: 0.5rem 0; align-items: center; gap: 0.5rem;">
+            <span>MENU</span>
+            <span style="font-size: 1.2rem; line-height: 1;">☰</span>
+          </button>
+
+        </div>
+      </header>
+    
+        <main style="flex: 1;">
+          
+      <div style="padding-top: 5.5rem;">
+        
+        <!-- HERO SECTION -->
+        <section class="gallery-container section-margin">
+          <div class="hero-wrapper">
+            
+            <!-- Hero Image Container (65-75vh mobile) -->
+            <div class="art-img-container" style="aspect-ratio: 16/9; max-height: 75vh; min-height: 50vh;">
+              <img src="images/hero_artwork.jpg" alt="Contemporary Art Exhibition Hero Canvas">
+            </div>
+
+            <!-- Dedicated High-Contrast Text Card -->
+            <div class="hero-text-card">
+              <span class="section-label" style="display: block; margin-bottom: 0.75rem;">MAHONEY'S GALLERIES</span>
+              
+              <h1 class="hero-display-title" style="text-transform: uppercase; margin-bottom: 1.5rem;">
+                ART THAT<br>INSPIRES
+              </h1>
+              
+              <p class="body-text-editorial" style="margin-bottom: 2rem;">
+                Contemporary art, thoughtfully curated across New York, London, and Paris. Championing visionary practices in painting, sculpture, and spatial installation.
+              </p>
+
+              <div>
+                <button data-nav="artists" class="link-editorial">
+                  <span>EXPLORE ARTISTS</span> <span class="arrow-icon">→</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- INTRODUCTION SECTION -->
+        <section class="gallery-container section-margin">
+          <div style="border-top: 1px solid #E2E0D9; border-bottom: 1px solid #E2E0D9; padding: clamp(3.5rem, 7vw, 6.5rem) 0;">
+            <div class="intro-grid">
+              <div>
+                <span class="section-label" style="display: block; margin-bottom: 0.75rem;">THE GALLERY</span>
+                <h2 class="section-heading-large" style="text-transform: uppercase;">
+                  A SPACE FOR<br>CONTEMPORARY<br>ART
+                </h2>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <p class="font-serif" style="font-size: clamp(1.25rem, 2vw, 1.65rem); font-style: italic; font-weight: 300; line-height: 1.5; color: #171716;">
+                  Founded in 1994, Mahoney's Galleries has cultivated an international reputation for quiet luxury, museum-grade curation, and uncompromising artistic integrity.
+                </p>
+                <p class="body-text-editorial">
+                  We present monographic exhibitions, historical surveys, and collaborative public projects that explore spatial stillness, raw pigments, and architectural form.
+                </p>
+                <div style="padding-top: 0.5rem;">
+                  <button data-nav="about" class="link-editorial">
+                    DISCOVER THE GALLERY →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURED ARTISTS -->
+        <section class="gallery-container section-margin">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1.5rem; margin-bottom: clamp(2.5rem, 5vw, 4rem); border-bottom: 1px solid #E2E0D9; padding-bottom: 1.5rem;">
+            <div>
+              <span class="section-label" style="display: block; margin-bottom: 0.5rem;">ARTISTS</span>
+              <h2 class="section-heading-large" style="font-style: italic;">Meet the Artists</h2>
+            </div>
+            <button data-nav="artists" class="link-editorial">VIEW ALL ARTISTS →</button>
+          </div>
+
+          <div class="artists-grid">
+            
+              <div data-select-artist="amelia-hart" style="cursor: pointer;">
+                <div class="art-img-container" style="aspect-ratio: 3/4; margin-bottom: 1.5rem;">
+                  <img src="images/artist_amelia.jpg" alt="AMELIA HART">
+                </div>
+                <h3 class="subheading-title" style="margin-bottom: 0.5rem;">AMELIA HART</h3>
+                <p class="font-sans" style="font-size: clamp(0.75rem, 0.9vw, 0.875rem); letter-spacing: 0.18em; color: #666562; text-transform: uppercase;">
+                  Contemporary Painter
+                </p>
+              </div>
+            
+              <div data-select-artist="jean-luc-moreau" style="cursor: pointer;">
+                <div class="art-img-container" style="aspect-ratio: 3/4; margin-bottom: 1.5rem;">
+                  <img src="images/artist_jean_luc.jpg" alt="JEAN-LUC MOREAU">
+                </div>
+                <h3 class="subheading-title" style="margin-bottom: 0.5rem;">JEAN-LUC MOREAU</h3>
+                <p class="font-sans" style="font-size: clamp(0.75rem, 0.9vw, 0.875rem); letter-spacing: 0.18em; color: #666562; text-transform: uppercase;">
+                  Architectural Sculptor
+                </p>
+              </div>
+            
+              <div data-select-artist="elena-vance" style="cursor: pointer;">
+                <div class="art-img-container" style="aspect-ratio: 3/4; margin-bottom: 1.5rem;">
+                  <img src="images/gallery_interior.jpg" alt="ELENA VANCE">
+                </div>
+                <h3 class="subheading-title" style="margin-bottom: 0.5rem;">ELENA VANCE</h3>
+                <p class="font-sans" style="font-size: clamp(0.75rem, 0.9vw, 0.875rem); letter-spacing: 0.18em; color: #666562; text-transform: uppercase;">
+                  Fine Art Photographer
+                </p>
+              </div>
+            
+          </div>
+        </section>
+
+        <!-- CURRENT EXHIBITION -->
+        <section style="background-color: #F2F0EC; border-top: 1px solid #E2E0D9; border-bottom: 1px solid #E2E0D9; padding: clamp(4rem, 8vw, 8rem) 0; margin-bottom: clamp(4.5rem, 10vw, 10.5rem);">
+          <div class="gallery-container">
+            <div class="exhibition-grid">
+              <div class="art-img-container" style="aspect-ratio: 16/10;">
+                <img src="images/exhibition_installation.jpg" alt="RESONANCE OF FORM &amp; SILENCE">
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <span class="section-label">CURRENT EXHIBITION</span>
+                <h2 class="section-heading-large" style="text-transform: uppercase;">RESONANCE OF FORM &amp; SILENCE</h2>
+                <p class="font-sans" style="font-size: clamp(0.8125rem, 1vw, 0.9375rem); letter-spacing: 0.2em; font-weight: 600; text-transform: uppercase; color: #171716;">
+                  AMELIA HART &amp; JEAN-LUC MOREAU
+                </p>
+                <p class="font-mono" style="font-size: clamp(0.75rem, 0.9vw, 0.8125rem); color: #666562; text-transform: uppercase;">
+                  OCTOBER 12, 2026 – JANUARY 18, 2027
+                </p>
+                <p class="body-text-editorial">A monumental dual exhibition bringing together the textural abstract paintings of Amelia Hart and the gravitational bronzes of Jean-Luc Moreau. Exploring spatial silence, mineral materiality, and the dialogue between canvas and volume.</p>
+                <div style="padding-top: 1rem;">
+                  <button data-open-event="exhibition-resonance" class="link-editorial">VIEW EXHIBITION →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FULL-WIDTH ARTWORK MOMENT -->
+        <section class="section-margin">
+          <div style="height: clamp(55vh, 70vh, 80vh); position: relative; overflow: hidden; background-color: #171716;">
+            <img src="images/gallery_interior.jpg" alt="Gallery Spatial Moment" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
+            <div style="position: absolute; bottom: clamp(2rem, 5vw, 5rem); left: clamp(1.5rem, 5vw, 5rem); right: clamp(1.5rem, 5vw, 5rem); color: #F9F8F6; max-width: 680px; background-color: rgba(23, 23, 22, 0.7); backdrop-filter: blur(8px); padding: clamp(1.5rem, 3vw, 2.5rem); border: 1px solid rgba(255,255,255,0.15);">
+              <span class="font-sans" style="font-size: clamp(0.6875rem, 0.8vw, 0.75rem); letter-spacing: 0.3em; text-transform: uppercase; display: block; margin-bottom: 0.75rem; color: #D5D2CB;">
+                EXHIBITION VIEW — NEW YORK
+              </span>
+              <p class="font-serif" style="font-style: italic; font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 300; line-height: 1.35;">
+                "Where architecture fades and pure material presence begins."
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="gallery-container section-margin" style="max-width: 780px; text-align: center;">
+          <span class="section-label" style="display: block; margin-bottom: 0.75rem;">STAY CONNECTED</span>
+          
+          <h2 class="section-heading-large" style="font-style: italic; margin-bottom: 1.25rem;">
+            Receive Gallery Announcements
+          </h2>
+          
+          <p class="body-text-editorial" style="max-width: 540px; margin: 0 auto 2.5rem auto;">
+            Receive private exhibition invitations, press updates, and new artist acquisitions directly to your inbox.
+          </p>
+          
+          <form id="newsletter-form" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 480px; margin: 0 auto;">
+            <input type="email" required="" placeholder="Enter your email address" class="form-input-minimal" style="flex: 1 1 240px;">
+            <button type="submit" class="btn-primary-dark" style="flex: 0 0 auto;">SUBSCRIBE →</button>
+          </form>
+        </section>
+
+      </div>
+    
+        </main>
+        
+      <footer style="background-color: #F2F0EC; border-top: 1px solid #E2E0D9; color: #171716; padding-top: clamp(4rem, 8vw, 7rem); padding-bottom: 4rem;">
+        <div class="gallery-container">
+          
+          <div style="border-bottom: 1px solid #E2E0D9; padding-bottom: 3.5rem; margin-bottom: 3.5rem; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 2.5rem;">
+            <div>
+              <span class="font-serif" style="font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; display: block; line-height: 1;">
+                MAHONEY'S
+              </span>
+              <span class="font-sans" style="font-size: 0.6875rem; letter-spacing: 0.35em; color: #666562; text-transform: uppercase; display: block; margin-top: 8px; font-weight: 500;">
+                GALLERIES · EST. 1994
+              </span>
+            </div>
+            <p class="font-serif" style="font-style: italic; font-size: clamp(1.15rem, 1.8vw, 1.4rem); color: #666562; max-width: 480px; font-weight: 300;">
+              "Art is a site of deceleration—a physical vessel where weight, pigment, and light collapse into singular presence."
+            </p>
+          </div>
+
+          <div class="footer-grid" style="margin-bottom: 4.5rem; font-size: 0.875rem;">
+            <div>
+              <h4 class="section-label" style="margin-bottom: 1.25rem; color: #171716;">NAVIGATION</h4>
+              <div style="display: flex; flex-direction: column; gap: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; color: #666562;">
+                <button data-nav="home" style="background: none; border: none; text-transform: uppercase; letter-spacing: 0.15em; color: #666562; text-align: left; cursor: pointer; font-size: 0.875rem;">Home</button>
+                <button data-nav="artists" style="background: none; border: none; text-transform: uppercase; letter-spacing: 0.15em; color: #666562; text-align: left; cursor: pointer; font-size: 0.875rem;">Artists</button>
+                <button data-nav="press-events" style="background: none; border: none; text-transform: uppercase; letter-spacing: 0.15em; color: #666562; text-align: left; cursor: pointer; font-size: 0.875rem;">Press &amp; Events</button>
+                <button data-nav="about" style="background: none; border: none; text-transform: uppercase; letter-spacing: 0.15em; color: #666562; text-align: left; cursor: pointer; font-size: 0.875rem;">About the Gallery</button>
+                <button data-nav="contact" style="background: none; border: none; text-transform: uppercase; letter-spacing: 0.15em; color: #666562; text-align: left; cursor: pointer; font-size: 0.875rem;">Contact &amp; Visit</button>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="section-label" style="margin-bottom: 1.25rem; color: #171716;">GALLERY LOCATIONS</h4>
+              <div style="display: flex; flex-direction: column; gap: 1.25rem; color: #666562; line-height: 1.6;">
+                
+                  <div>
+                    <strong style="color: #171716; text-transform: uppercase; display: block; font-weight: 600;">New York — Chelsea Art District</strong>
+                    <p style="font-size: 0.875rem;">524 West 26th Street</p>
+                    <p class="font-mono" style="font-size: 0.8125rem;">+1 (212) 555-0182</p>
+                  </div>
+                
+                  <div>
+                    <strong style="color: #171716; text-transform: uppercase; display: block; font-weight: 600;">London — Mayfair</strong>
+                    <p style="font-size: 0.875rem;">18 Cork Street</p>
+                    <p class="font-mono" style="font-size: 0.8125rem;">+44 (0)20 7946 0912</p>
+                  </div>
+                
+                  <div>
+                    <strong style="color: #171716; text-transform: uppercase; display: block; font-weight: 600;">Paris — Le Marais</strong>
+                    <p style="font-size: 0.875rem;">42 Rue de Turenne</p>
+                    <p class="font-mono" style="font-size: 0.8125rem;">+33 1 42 68 55 20</p>
+                  </div>
+                
+              </div>
+            </div>
+
+            <div>
+              <h4 class="section-label" style="margin-bottom: 1.25rem; color: #171716;">DIGITAL &amp; PRESS</h4>
+              <div style="display: flex; flex-direction: column; gap: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; color: #666562;">
+                <a href="https://instagram.com" target="_blank" style="color: #666562; text-decoration: none;">Instagram ↗</a>
+                <a href="https://artsy.net" target="_blank" style="color: #666562; text-decoration: none;">Artsy ↗</a>
+                <a href="https://ocula.com" target="_blank" style="color: #666562; text-decoration: none;">Ocula ↗</a>
+                <a href="https://linkedin.com" target="_blank" style="color: #666562; text-decoration: none;">LinkedIn ↗</a>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="section-label" style="margin-bottom: 1.25rem; color: #171716;">ACQUISITION INQUIRIES</h4>
+              <p style="color: #666562; margin-bottom: 1.25rem; line-height: 1.6; font-size: 0.875rem;">
+                For private sales, museum loans, or artwork acquisition inquiries, please contact our directorate.
+              </p>
+              <a href="mailto:inquiries@mahoneysgalleries.art" style="color: #171716; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; border-bottom: 1px solid #171716; padding-bottom: 3px; text-decoration: none; font-size: 0.8125rem;">
+                inquiries@mahoneysgalleries.art →
+              </a>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid #E2E0D9; padding-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; font-size: 0.75rem; color: #666562; letter-spacing: 0.18em; text-transform: uppercase;">
+            <p>© 2026 MAHONEY'S GALLERIES LLC. ALL RIGHTS RESERVED.</p>
+            <div style="display: flex; gap: 2rem;">
+              <span>PRIVACY POLICY</span>
+              <span>TERMS OF EXHIBITION</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+        
+        
+      </div>
+    </div>
+
+  <!-- Standalone Browser Script (Zero Build Step Required, Works Directly via file:// or http://) -->
+  <script src="js/app.js"></script>
+
+
+
+</body></html>
